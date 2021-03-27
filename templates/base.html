@@ -1,13 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <title>{{ title }}</title>
-    </head>
-    <body>
-        <h1 style ="font-family:Arial">Миссия Колонизация Марса</h1>
-    <div>
-        <h4 style ="font-family:Arial">И на Марсе будут яблони цвести!</h4>
-    </div>
-    </body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>{{title}}</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Миссия Колонизация Марса</a>
+    </nav>
+</header>
+<!-- Begin page content -->
+    {% block content %}<h4 style ="font-family:Arial">И на Марсе будут яблони цвести!</h4>
+    {% endblock %}
+</body>
 </html>
